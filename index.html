@@ -1,52 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- alterado para pt-br -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport = responsividade --> 
     <title>World Game</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- classe para configurar a disposição do texto para centralizado -->
 </head>
 <body>
 
-    <h1> 
-        <link rel="stylesheet" href="assets/css/style.css">
-        Arte no Mundo dos Games: The Last of Us 
-    </h1>
+    <!-- tag div é usada para criar grandes blocos para estiliz. // header é a tag <div> mais especifica-->
+    <header> 
+        <h1 class="center"> Arte no Mundo dos Games: The Last of Us II </h1> 
+    </header>
+    
+<!-- tag H e a P tem compartamento de linha completa com margem padrão e espaçamento BLOCO, porém a <spam> só ocupa o necessário (s/espaçamento e margem) INLINE -->
     
 
         <ul>
-            <li> <a href="http://127.0.0.1:5500/index.html"> Home </a> </li>
+            <li> <a href="http://127.0.0.1:5500/index.html"> Home </a> </li> 
             <li> <a href="http://127.0.0.1:5500/contato.html"> Contato </a> </li>
-            
+            <li> <a href="http://127.0.0.1:5500/Sobre.html"> Sobre nós </a> </li>   
+            <!--Tag a=ancora com referencia href // é possivel tb incluir target para abrir uma nova aba // li ocupa uma linha inteira tb -->
         </ul>
 
-        <p> 
+        <main> 
+            <p> 
             Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
             Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
             quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. 
             Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. 
             Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, 
             par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-        </p>
+            </p> 
+        </main>
+        
+        <section>
+            <img src="assets/img/ellie.jpg" alt="Foto do game The Last of Us"> 
+        </section> 
+        <!-- img possui 2 atrib. src = source: end de local online ou local, alt=text alternativo q tb serve para leitor de tela -->
+        <!-- img ocupa apenas espaço necessario -->
+        
+        <section>
+            <p>
+                Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. 
+                Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. 
+                Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, 
+                et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. 
+                Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. 
+                Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. 
+                Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+            </p>
+        </section>
 
-        <img src="assets/img/ellie.jpg" alt="Foto do game The Last of Us">
+        <section>
+            <h2> Trailer - The Last of Us 2 </h2> 
+            <iframe width="967" height="544" src="https://www.youtube.com/embed/W2Wnvvj33Wo" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </section>
 
-        <p>
-            Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. 
-            Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. 
-            Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, 
-            et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. 
-            Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. 
-            Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. 
-            Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
-        </p>
-        <h2>Trailer - The Last of Us 2</h2> 
-
-        <iframe width="967" height="544" src="https://www.youtube.com/embed/W2Wnvvj33Wo" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+        <footer>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Totam cumque accusamus ipsum saepe, sit assumenda dignissimos natus? 
+                Minima asperiores odit mollitia! Consequatur doloribus recusandae dolor sit nulla cum velit quos! 
+            </p>
+        </footer>
 </body>
 </html> 
+
+<!-- LEMBRAR: modificar toda a estrutura <div> assim que for definida o layout desejado para a pagina, assim será melhor definido onde será section, main, footer etc -->

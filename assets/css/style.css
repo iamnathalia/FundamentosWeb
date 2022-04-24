@@ -1,5 +1,65 @@
 /* estilização da pagina index */
 
-.center {
+.center { /* por enquanto todos os titulos estão centralizados*/
     text-align: center;
 }
+
+.container { /* classe aplicada no import de video e textos */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.container2 { /* classe aplicada na seção "sobre" */
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    flex-flow: row wrap;
+    
+}
+
+nav ul li a { /* aplicações do menu principal */ 
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: darkolivegreen; /* temporario */
+    flex-flow: row wrap;
+    
+}
+
+.ebotao :hover { /* efeito mudança de cor ao passar o cursos em cima do menu principal */ 
+    color: chartreuse;
+}
+
+.ptexto {
+    padding: 5vw; /*MODIFICAR DPS!!!! margem espaçamento externo do conteudo | padding: espaçamento interno do conteudo */ 
+}
+
+.margem { /*foi aplicada ne seção contato*/
+    margin-left: 2rem;
+}
+
+.imgmain {
+    width: 80%;
+    margin: auto;   
+    display: block;
+}
+    
+    
+    align-self: center;
+}margin: 2rem; display: flex;

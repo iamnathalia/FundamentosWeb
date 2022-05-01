@@ -23,23 +23,28 @@
     <div class="container">
 
         <div>
-            <form>
+
+            <form> <!-- tag para formulario-->
                 <label for="nome"> Nome: </label>
-                <input type="text" id="nome"> <!-- caixa menor de texto para info simples -->
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()"> <!-- Função atribuida ao campo nome pelo metodo onkeyup -->
+                <div id="txtNome"></div> <!-- criação de uma id -->
             <br> 
             <!-- br quebra o texto paa a proxima linha: recomendado apenas para HTML -->
             <br> 
                 <label for="nome"> e-mail: </label>
-                <input type="email" id="email">
-            <br> <!-- br será removido -->
+                <input onkeyup="validaEmail()" type="email" id="email" > <!-- EVENTO: o campo email é pré validada via imput email pela estrutura basica (@.com)-->
+                <div id="textEmail"></div>
             <br>
                 <label for="Assunto"> Assunto: </label> <br>
-                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea> <!-- caixa maior de texto para mensagens-->
+                <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea> <!-- caixa maior de texto para mensagens -->
+
+                <div id="textAssunto"></div> 
+
             <br>
-            <br>
-                <button> Enviar </button>
+                <button onclick="enviar()"> Enviar </button> 
+                <!-- Incluso no botao enviar a funcao enviar c/ alert -->
             </form>
+
         </div>
 
         <div class="margem">
@@ -50,14 +55,20 @@
             571247084677946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576d1b6136f3%3A0xd07acf864bcd7990!2sAv.%20Brg.
             %20Faria%20Lima%2C%201018-1882%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001451-001!5e0!3m2!1spt-BR
             !2sbr!4v1650335913695!5m2!1spt-BR!2sbr" 
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" 
+            onmouseout="mapaNormal()" id="mapa"> </iframe>
         </div>
 
     </div>
 
-
     <footer>
-        <p>  Nathalia S. Lima &copy; Todos os direitos reservados </p>
+        <div class="container">
+            <a href="https://www.facebook.com/" target="blank"> <img class="tmsocial" src="assets/img/icons/facebook.png" alt="logo facebook"> </a>
+            <a href="https://www.instagram.com/" target="blank"><img class="tmsocial" src="assets/img/icons/instagram.png" alt="logo instagram"> </a>
+            <a href="https://www.github.com/" target="blank"><img class="tmsocial" src="assets/img/icons/github.png" alt="logo github"> </a>
+            <a href="https://www.linkedin.com/" target="blank"><img class="tmsocial" src="assets/img/icons/linkedin.png" alt="logo linkedin"> </a>
+        </div>
+        <p class="center">  Nathalia S. Lima &copy; Todos os direitos reservados </p>
     </footer>
     
     <script src="assets/js/script.js">  </script>      <!-- INCORPORAÇÃO DO SCRIPT JS -->
@@ -67,4 +78,3 @@
 
 <!-- a tag imput possui diversas possibilidades de formulario, dentre elas o "file" para envio de arquivos, date etc -->
 
-<!-- RETORNAR DEPOIS PARA FINALIZAR A FOOTER COM ICONES E LINKS EXTERNOS -->

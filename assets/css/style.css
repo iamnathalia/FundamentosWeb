@@ -20,7 +20,7 @@
     padding: 2rem;
 }
 
-.circle {
+.circle { 
     border-radius: 50%;
     width: 20vw;
 }
@@ -54,8 +54,16 @@ nav ul li a { /* aplicações do menu principal */
     margin-left: 2rem;
 }
 
-.imgmain {
+.imgmain { /*imagem principal da pag inicial*/
     width: 80%;
     margin: auto;   
     display: block;
 }
+
+.tmsocial { /*conf logo redes sociais no footer*/
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1vw;
+    margin-top: 5rem;
+}
+

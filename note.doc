@@ -1,0 +1,29 @@
+ANOTAÇÕES GERAIS - JAVASCRIPT 
+
+CASE SENSITIVE! -> aAbBcC
+
+escopo: é um local, determina um perimetro... de onde até onde
+
+>> VAR - variavel de escopo GLOBAL, ou seja, NÃO É LIMITADO por hierarquia de função (ex: função x não funciona apenas na limitação { ... } VAI ALÉM DELA)
+
+(*O uso do let está associado a boas praticas! evita conflitos de escopo*)
+>>>> LET - variavel de escopo LOCAL, ou seja, É LIMITADO por hierarquia de função (ex: função x funciona apenas na limitação { ... }) 
+
+>> CONST - variavel constante (sem variaçao) de escopo GLOBAL, pouco usada.
+
+ECMAScript é a comunidade de JS que valida, certifica e autoriza de forma oficial as atualizações na linguagem JS 
+
+
+:::::::::::::::::::::::::
+
+Vias possiveis para acessar a DOM - buscar uma informação: 
+
+por TAG: getElementByTagName()
+por ID:  getElementById()
+por NOME: getElementsByName()
+por CLASSE: getElementsByClassName()
+por SELETOR: querySelector() 
+
+Por Seletor vale ressaltar que é uma atualização que permite buscar a informação por tag, id, classe.
+
+:::::::::::::::::::::::::
